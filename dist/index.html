@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommece tailwindcss</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="font-Nunito">
+    <!-- navbar starts here  -->
+    <div class="w-full bg-[#F5EFE6]">
+      <nav
+        class="w-[90%] xl:w-5/6 text-[#1D1D1D] flex justify-between items-center px-2 md:px-5 h-[70px] border-[#1D1D1D] border-b-[1px] mx-auto"
+      >
+        <div class="cursor-pointer">
+          <a class="text-2xl md:text-3xl font-bold">GRACE</a>
+        </div>
+
+        <div class="hidden md:flex gap-7">
+          <a href="#" class="text-xl group transition duration-300">
+            Home
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#1D1D1D]"
+            ></span>
+          </a>
+          <a href="#" class="text-xl group transition duration-300">
+            About
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#1D1D1D]"
+            ></span>
+          </a>
+          <a href="#" class="text-xl group transition duration-300">
+            Products
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#1D1D1D]"
+            ></span>
+          </a>
+        </div>
+
+        <div class="flex gap-5 items-center cursor-pointer">
+          <div class="flex items-center gap-2 text-xl">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>0</p>
+          </div>
+
+          <div class="text-2xl md:hidden cursor-pointer">
+            <i class="fa-solid fa-bars" style="color: #1d1d1d"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- navbar ends here  -->
+
+    <!-- hero section starts here -->
+
+    <section class="w-full h-[70vh] md:h-[100vh] lg:h-[80vh] bg-[#F5EFE6]">
+      <div
+        class="w-[92%] mx-auto lg:flex gap-2 lg:gap-12 xl:w-5/6 lg:pt-32 h-auto sm:px-8"
+      >
+        <div class="lg:order-2">
+          <img
+            src="images/hero.png"
+            class="w-64 lg:w-full rounded-full mx-auto"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="bg-opacity-5 flex lg:order-1 flex-col justify-center w-full pt-3 pr-4 ps-2 xl:w-1/2"
+        >
+          <h1 class="text-4xl font-medium mb-4 md:text-6xl">
+            Discover Your <span class="text-sky-500">Essentials</span>
+          </h1>
+          <span class="md:text-4xl text-gray-600 pb-3"
+            >Where Quality Meets Convenience!</span
+          >
+          <p class="leading-relaxed md:text-xl">
+            Welcome to our online emporium, where innovation meets style and
+            utility. Browse our curated collection of premium products designed
+            to enhance your everyday life. From cutting-edge gadgets to timeless
+            classics, we offer something for every taste and need!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- hero section ends here  -->
+
+    <!-- services section starts here -->
+
+    <section class="w-full pt-5">
+      <div
+        class="w-[92%] md:w-5/6 mx-auto px-3 md:flex flex-wrap justify-between"
+      >
+        <div
+          class="flex items-center gap-4 border-b-2 p-4 mb-4 md:border-r-[1px] md:border-b-0 mr-5"
+        >
+          <i class="fa-solid fa-truck-fast text-2xl" style="color: #67a6f4"></i>
+          <div>
+            <p class="text-xl md:text-2xl">Worldwide Shipping</p>
+            <p class="text-sm">Order Above $100</p>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center gap-4 border-b-2 p-4 mb-4 md:border-r-[1px] md:border-b-0 mr-5"
+        >
+          <i
+            class="fa-solid fa-arrow-rotate-left text-2xl"
+            style="color: #67a6f4"
+          ></i>
+          <div>
+            <p class="text-xl md:text-2xl">Easy 30 Day Returns</p>
+            <p class="text-sm">Back Returns In 7 Days</p>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center gap-4 border-b-2 p-4 mb-4 md:border-r-[1px] md:border-b-0 mr-5"
+        >
+          <i
+            class="fa-solid fa-hand-holding-dollar text-2xl"
+            style="color: #67a6f4"
+          ></i>
+          <div>
+            <p class="text-xl md:text-2xl">Money Back Guarantee</p>
+            <p class="text-sm">Guarantee With In 30-Days</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 p-4 mb-4">
+          <i
+            class="fa-solid fa-headphones-simple text-2xl"
+            style="color: #67a6f4"
+          ></i>
+          <div>
+            <p class="text-xl md:text-2xl">Easy Online Support</p>
+            <p class="text-sm">24/7 Any Time Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section ends here -->
+
+    <!-- products section starts here  -->
+
+    <div class="bg-white">
+      <div
+        class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
+      >
+        <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+          Our Products
+        </h2>
+
+        <div
+          class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+        >
+          <div class="group relative">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80"
+            >
+              <img
+                src="clothes/tshirt-1.jpeg"
+                alt="Front of men&#039;s Basic Tee in black."
+                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                <h3 class="text-sm text-gray-700">
+                  <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                    Regular T-shirt
+                  </a>
+                </h3>
+                <p class="mt-1 text-sm text-gray-500">H&M</p>
+              </div>
+              <p class="text-sm font-medium text-gray-900">$4535</p>
+            </div>
+            <button
+              class="mt-2 flex w-full items-center justify-center rounded-md border border-transparent bg-[#f3f4f6] group-hover:bg-[#d3d3d3] px-8 py-[8px] text-base font-medium"
+            >
+              Add to bag
+            </button>
+          </div>
+
+          <div class="group relative">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80"
+            >
+              <img
+                src="clothes/tshirt-2.jpeg"
+                alt="Front of men&#039;s Basic Tee in black."
+                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                <h3 class="text-sm text-gray-700">
+                  <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                    Basic Tee
+                  </a>
+                </h3>
+                <p class="mt-1 text-sm text-gray-500">H&M</p>
+              </div>
+              <p class="text-sm font-medium text-gray-900">$4535</p>
+            </div>
+            <button
+              class="mt-2 flex w-full items-center justify-center rounded-md border border-transparent bg-[#f3f4f6] group-hover:bg-[#d3d3d3] px-8 py-[8px] text-base font-medium"
+            >
+              Add to bag
+            </button>
+          </div>
+
+          <div class="group relative">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80"
+            >
+              <img
+                src="clothes/tshirt-3.jpeg"
+                alt="Front of men&#039;s Basic Tee in black."
+                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                <h3 class="text-sm text-gray-700">
+                  <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                    Basic Tee
+                  </a>
+                </h3>
+                <p class="mt-1 text-sm text-gray-500">H&M</p>
+              </div>
+              <p class="text-sm font-medium text-gray-900">$4535</p>
+            </div>
+            <button
+              class="mt-2 flex w-full items-center justify-center rounded-md border border-transparent bg-[#f3f4f6] group-hover:bg-[#d3d3d3] px-8 py-[8px] text-base font-medium"
+            >
+              Add to bag
+            </button>
+          </div>
+
+          <div class="group relative">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80"
+            >
+              <img
+                src="clothes/tshirt-4.jpeg"
+                alt="Front of men&#039;s Basic Tee in black."
+                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                <h3 class="text-sm text-gray-700">
+                  <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                    Basic Tee
+                  </a>
+                </h3>
+                <p class="mt-1 text-sm text-gray-500">H&M</p>
+              </div>
+              <p class="text-sm font-medium text-gray-900">$4535</p>
+            </div>
+            <button
+              class="mt-2 flex w-full items-center justify-center rounded-md border border-transparent bg-[#f3f4f6] group-hover:bg-[#d3d3d3] px-8 py-[8px] text-base font-medium"
+            >
+              Add to bag
+            </button>
+          </div>
+
+          <div class="group relative">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80"
+            >
+              <img
+                src="clothes/jeans-5.jpeg"
+                alt="Front of men&#039;s Basic Tee in black."
+                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                <h3 class="text-sm text-gray-700">
+                  <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                    Basic Tee
+                  </a>
+                </h3>
+                <p class="mt-1 text-sm text-gray-500">H&M</p>
+              </div>
+              <p class="text-sm font-medium text-gray-900">$4535</p>
+            </div>
+            <button
+              class="mt-2 flex w-full items-center justify-center rounded-md border border-transparent bg-[#f3f4f6] group-hover:bg-[#d3d3d3] px-8 py-[8px] text-base font-medium"
+            >
+              Add to bag
+            </button>
+          </div>
+
+          <div class="group relative">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80"
+            >
+              <img
+                src="clothes/jeans-1.jpeg"
+                alt="Front of men&#039;s Basic Tee in black."
+                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                <h3 class="text-sm text-gray-700">
+                  <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                    Basic Tee
+                  </a>
+                </h3>
+                <p class="mt-1 text-sm text-gray-500">H&M</p>
+              </div>
+              <p class="text-sm font-medium text-gray-900">$4535</p>
+            </div>
+            <button
+              class="mt-2 flex w-full items-center justify-center rounded-md border border-transparent bg-[#f3f4f6] group-hover:bg-[#d3d3d3] px-8 py-[8px] text-base font-medium"
+            >
+              Add to bag
+            </button>
+          </div>
+
+          <div class="group relative">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80"
+            >
+              <img
+                src="clothes/jeans-2.jpeg"
+                alt="Front of men&#039;s Basic Tee in black."
+                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                <h3 class="text-sm text-gray-700">
+                  <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                    Basic Tee
+                  </a>
+                </h3>
+                <p class="mt-1 text-sm text-gray-500">H&M</p>
+              </div>
+              <p class="text-sm font-medium text-gray-900">$4535</p>
+            </div>
+            <button
+              class="mt-2 flex w-full items-center justify-center rounded-md border border-transparent bg-[#f3f4f6] group-hover:bg-[#d3d3d3] px-8 py-[8px] text-base font-medium"
+            >
+              Add to bag
+            </button>
+          </div>
+
+          <div class="group relative">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80"
+            >
+              <img
+                src="clothes/jeans-3.jpeg"
+                alt="Front of men&#039;s Basic Tee in black."
+                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                <h3 class="text-sm text-gray-700">
+                  <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                    Basic Tee
+                  </a>
+                </h3>
+                <p class="mt-1 text-sm text-gray-500">H&M</p>
+              </div>
+              <p class="text-sm font-medium text-gray-900">$4535</p>
+            </div>
+            <button
+              class="mt-2 flex w-full items-center justify-center rounded-md border border-transparent bg-[#f3f4f6] group-hover:bg-[#d3d3d3] px-8 py-[8px] text-base font-medium"
+            >
+              Add to bag
+            </button>
+          </div>
+
+          <!-- More products... -->
+        </div>
+      </div>
+    </div>
+
+    <!-- products section ends here  -->
+
+    <!-- about section starts here  -->
+
+    <section class="bg-white dark:bg-[#31363F]">
+      <div class="container px-6 py-10 mx-auto">
+        <h1
+          class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl text-center dark:text-white"
+        >
+          Who we <span class="underline decoration-blue-500">Are</span>
+        </h1>
+
+        <p class="mt-4 text-gray-500 xl:mt-6 dark:text-gray-300 text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam
+          voluptatibus
+        </p>
+
+        <div
+          class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3"
+        >
+          <div
+            class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl"
+          >
+            <span class="inline-block text-blue-500 dark:text-blue-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"
+                />
+              </svg>
+            </span>
+
+            <h1
+              class="text-2xl font-semibold text-gray-700 capitalize dark:text-white"
+            >
+              elegant Dark Mode
+            </h1>
+
+            <p class="text-gray-500 dark:text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              ab nulla quod dignissimos vel non corrupti doloribus voluptatum
+              eveniet
+            </p>
+
+            <a
+              href="#"
+              class="inline-flex p-2 text-blue-500 capitalize transition-colors duration-200 transform bg-blue-100 rounded-full dark:bg-blue-500 dark:text-white hover:underline hover:text-blue-600 dark:hover:text-blue-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl"
+          >
+            <span class="inline-block text-blue-500 dark:text-blue-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+                />
+              </svg>
+            </span>
+
+            <h1
+              class="text-2xl font-semibold text-gray-700 capitalize dark:text-white"
+            >
+              Easy to customiztions
+            </h1>
+
+            <p class="text-gray-500 dark:text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              ab nulla quod dignissimos vel non corrupti doloribus voluptatum
+              eveniet
+            </p>
+
+            <a
+              href="#"
+              class="inline-flex p-2 text-blue-500 capitalize transition-colors duration-200 transform bg-blue-100 rounded-full dark:bg-blue-500 dark:text-white hover:underline hover:text-blue-600 dark:hover:text-blue-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl"
+          >
+            <span class="inline-block text-blue-500 dark:text-blue-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                />
+              </svg>
+            </span>
+
+            <h1
+              class="text-2xl font-semibold text-gray-700 capitalize dark:text-white"
+            >
+              Simple & clean designs
+            </h1>
+
+            <p class="text-gray-500 dark:text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              ab nulla quod dignissimos vel non corrupti doloribus voluptatum
+              eveniet
+            </p>
+
+            <a
+              href="#"
+              class="inline-flex p-2 text-blue-500 capitalize transition-colors duration-200 transform bg-blue-100 rounded-full dark:bg-blue-500 dark:text-white hover:underline hover:text-blue-600 dark:hover:text-blue-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends here -->
+
+    <!-- footer section starts here  -->
+
+    <footer class="w-full bg-[#222831] text-white">
+      <div
+        class="w-[85%] h-auto mx-auto flex justify-between flex-wrap xl:w-[70vw]"
+      >
+        <div class="flex flex-col pt-6">
+          <a href="#" class="text-lg font-bold pb-4">Help</a>
+          <a href="#">Delivery</a>
+          <a href="#">Returns</a>
+          <a href="#">Secure Payments</a>
+          <a href="#">Track order</a>
+          <a href="#">Contact us</a>
+        </div>
+
+        <div class="flex flex-col pt-6">
+          <a href="#" class="text-lg font-bold pb-4">About us</a>
+          <a href="#">Carrers</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Responsibility</a>
+          <a href="#">Contact us</a>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-2xl font-bold mb-4">
+            Subscribe to our <span class="text-[#67A6F4]">Newsletter</span>
+          </h3>
+          <form action="#" method="post">
+            <input
+              class="rounded py-1 px-2 text-black focus:outline-none"
+              type="email"
+              name="email"
+              placeholder="Your Email Address"
+            />
+            <button
+              class="inline-block rounded-md border border-transparent bg-[#67A6F4] px-4 py-1 text-center font-medium text-white hover:bg-blue-500"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <p class="mt-8 text-center">
+        &copy; 2024 GRACE by 'Harman'. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
